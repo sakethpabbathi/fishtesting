@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import HomePage from "./HomePage";
 import ImportsExportsPage from "./ImportsExportsPage";
@@ -7,14 +7,13 @@ import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
-
-    <BrowserRouter basename="/upitrads">
-  <ScrollToTop />
-  <Routes>
-    <Route path="/" element={<HomePage />} />
-    <Route path="/imports-exports" element={<ImportsExportsPage />} />
-  </Routes>
-</BrowserRouter>
+    <HashRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/imports-exports" element={<ImportsExportsPage />} />
+      </Routes>
+    </HashRouter>
   );
 }
 
