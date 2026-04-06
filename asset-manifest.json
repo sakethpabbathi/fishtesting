@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fishtesting/static/css/main.e3db8137.css",
+    "main.js": "/fishtesting/static/js/main.2a30f955.js",
+    "index.html": "/fishtesting/index.html",
+    "main.e3db8137.css.map": "/fishtesting/static/css/main.e3db8137.css.map",
+    "main.2a30f955.js.map": "/fishtesting/static/js/main.2a30f955.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3db8137.css",
+    "static/js/main.2a30f955.js"
+  ]
+}
