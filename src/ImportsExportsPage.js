@@ -15,31 +15,6 @@ const Navbar = ({ setActiveSlide, setPath }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // const handleNavClick = (target, slideIndex = null, breadcrumb = null) => {
-  //   setMenuOpen(false);
-
-  //   if (window.location.pathname === "/imports-exports" && slideIndex !== null) {
-  //     setActiveSlide(slideIndex);
-  //     if (breadcrumb) setPath(breadcrumb);
-  //     return;
-  //   }
-                 
-  //   if (slideIndex !== null) {
-  //     navigate("/imports-exports");
-  //     setTimeout(() => {
-  //       if (setActiveSlide) setActiveSlide(slideIndex);
-  //       if (breadcrumb && setPath) setPath(breadcrumb);
-  //     }, 100);
-  //   } else {
-  //     navigate("/");
-  //     setTimeout(() => {
-  //       const element = document.getElementById(target);
-  //       if (element) element.scrollIntoView({ behavior: "smooth" });
-  //     }, 100);
-  //   }
-  // };
-
-  // Helper to handle the hover state for inline styles
   
   const handleNavClick = (target, slideIndex = null, breadcrumb = null) => {
   setMenuOpen(false);
@@ -54,13 +29,6 @@ const Navbar = ({ setActiveSlide, setPath }) => {
 };
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  // const navItems = [
-  //   { label: "Home", target: "home" },
-  //   { label: "Import", target: "imports-exports", slide: 1, path: ["Imports"] },
-  //   { label: "Export", target: "imports-exports", slide: 6, path: ["Exports"] },
-  //   { label: "About us", target: "about" },
-  //   { label: "Contact", target: "contact" },
-  // ];
 
 const navItems = [
     { label: "Home", target: "home" },
