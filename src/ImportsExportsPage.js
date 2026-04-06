@@ -84,27 +84,6 @@ const navItems = [
   );
 };
 
-// --- MAIN PAGE COMPONENT ---
-// const ImportsExportsPage = () => {
-//   const [activeSlide, setActiveSlide] = useState(0);
-//   const [path, setPath] = useState(["Imports & Exports"]);
-//   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-//   useEffect(() => {
-//     const handleResize = () => setIsMobile(window.innerWidth <= 768);
-//     window.addEventListener("resize", handleResize);
-//     return () => window.removeEventListener("resize", handleResize);
-//   }, []);
-
-//   const handleBreadcrumbClick = (index) => {
-//     const newPath = path.slice(0, index + 1);
-//     setPath(newPath);
-//     if (newPath.length === 1) setActiveSlide(0); 
-//     if (newPath.length === 2) {
-//       if (newPath[0] === "Imports") setActiveSlide(1);
-//       if (newPath[0] === "Exports") setActiveSlide(6);
-//     }
-//   };
 
 
 const ImportsExportsPage = () => {
